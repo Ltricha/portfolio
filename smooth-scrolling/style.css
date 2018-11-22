@@ -1,0 +1,102 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+
+
+.nav{
+	height: 100vh;
+	position: fixed;
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	align-content: center;
+}
+
+.nav__item{
+	margin: 5px 0px;
+	list-style-type: none;
+	font-size: 20px;
+	background: rgba(255, 255, 255);
+	text-align: center;
+}
+
+.nav__item a{
+	display: block;
+	font-weight: bold;
+	color: black;
+	padding: 20px 40px;
+	text-decoration: none;
+}
+
+.nav__item a:hover{
+	background: cyan;
+}
+
+
+.section{
+	min-height: 100vh;
+	background: grey;
+	display: block;
+	margin: 0;
+	font-weight: bold;
+}
+
+section img{
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+.section__text{
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+}
+
+
+h3{
+	margin: 0;
+	padding: 0;
+}
+
+#rood{
+	background: #FF0000;
+}
+
+#oranje{
+	background: #FFA500;
+}
+
+#geel{
+	background: #FFFF00;
+}
+
+#groen{
+	background: #00FF00;
+}
+
+#blauw{
+	background: #0000FF;
+}
+
+#paars{
+	background: #AA00FF;
+}
+
+.btn{
+	cursor: pointer;
+}
+
+.horizontal{
+	width: 700vw;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}

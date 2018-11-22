@@ -1,0 +1,106 @@
+html, body{
+    font-family: sans-serif;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: .8em;
+    color: white;
+}
+
+::-webkit-scrollbar { 
+    width: 5px;
+    background-color: #aaa;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000;
+}
+
+
+.album__cover{
+    width: 300px;
+    height:300px;
+    display: block;
+}
+
+
+/* section bewerken in breedte en hoogte */
+.album{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 2em;
+}
+
+.album__content{
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1.5em;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    transition: transform 1s linear;
+    overflow: auto;
+    cursor: pointer;
+
+}
+
+/* de animatie via transition */
+.album:hover .album__content{
+    transform: translateY(-300px);
+    
+}
+
+/* 2 koloms layout */
+@media screen and (min-width: 640px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+    
+    h1{
+        grid-column: 1/3;
+        text-align: center;
+        font-size: 5em;
+    }
+    
+    section{
+        justify-self: center;
+    }
+}
+
+/* 3 koloms layout */
+@media screen and (min-width: 940px){
+    body{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    h1{
+        grid-column: 1/4;
+        text-align: center;
+        font-size: 5em;
+
+    }
+}
+
+/* 4 koloms layout
+@media screen and (min-width: 1240px){
+    body{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    h1{
+        grid-column: 1/5;
+    }
+}
+*/
+
+.album__name--red{
+	color: red;
+}
+
+.album__name--backgroundRed{
+	background-color: red;
+}
+

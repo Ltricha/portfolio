@@ -1,0 +1,64 @@
+body{
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wrapper{
+   background-color: whitesmoke;
+   width: 60em;
+   height: 30em;
+   padding: 2em;
+   border: solid 5px;
+   box-sizing: border-box; 
+   position: relative;
+   left: 25%;
+   top: 100;
+}
+
+#wrapper > *{
+    margin: 5px;
+}
+
+#wrapper > *:not(:first-child){
+    position: relative;
+    left: 300px;
+}
+
+
+#head{
+    
+    font-weight: bolder;
+}
+
+#feedback{
+  width: 200px;
+  display: block;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+#myAnswer{
+    position: relative;
+    top: 20px;
+}
+
+#myAnswer:focus{
+    background-color: yellow;
+}
+
+#myAssignment{
+    font-family: MyFont;
+    font-size: 5em;
+    
+}
+
+@font-face{
+    
+    font-family: MyFont;
+    src: url('orange juice 2.0.ttf');
+}
